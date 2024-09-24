@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            text-align: center;           /* Centers the text */
+            font-size: 50px;              /* Increases the font size */
+            color: darkblue;              /* Sets the color to dark blue */
+            font-weight: bold;            /* Makes the font bold */
+            margin-top: 20%;              /* Adds space at the top for better centering */
+        }
+        </style>
+</head>
+<body>
+    <h1>Celebrity Quiz Game</h1>
+    <div class="quiz-container">
+        <div id="question-container" class="hide">
+            <!-- Display celebrity pics -->
+            <img id="celebrity-image" src="" alt="Celebrity Image">
+            <div id="question">Who is this celebrity?</div>
+            <!-- Display answer choices -->
+            <div id="answer-buttons" class="btn-container">
+                <button class="btn" id="choice1"></button>
+                <button class="btn" id="choice2"></button>
+                <button class="btn" id="choice3"></button>
+                <button class="btn" id="choice4"></button>
+            </div>
+            <div id="timer">Time remaining: <span id="time">10</span> seconds</div>
+        </div>
+        <!-- Display score  -->
+        <div id="score-container" class="hide">
+            Score: <span id="score">0</span> / 5
+        </div>
+        <!-- Button to start the quiz -->
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
